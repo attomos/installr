@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'commander/import'
+
+require 'installr'
+
+program :version, '0.0.1'
+
+program :help, 'Author', 'Nattaphoom Ch. <attomos@gmail.com>'
+program :help, 'Website', 'http://attomos.github.io/installr'
+program :help_formatter, :compact
+
+default_command :help
