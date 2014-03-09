@@ -8,6 +8,7 @@ program :version, '0.0.1'
 
 program :help, 'Author', 'Nattaphoom Ch. <attomos@gmail.com>'
 program :help, 'Website', 'http://attomos.github.io/installr'
+program :description, 'An API Wrapper for Installr (http://installrapp.com/)'
 program :help_formatter, :compact
 
 default_command :help
