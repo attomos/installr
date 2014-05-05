@@ -1,11 +1,11 @@
-require "bundler"
-Bundler.setup
+require 'rspec/core/rake_task'
+require 'bundler/gem_tasks'
 
-gemspec = eval(File.read("installr.gemspec"))
 
-task :build => "#{gemspec.full_name}.gem"
-
-file "#{gemspec.full_name}.gem" => gemspec.files + ["installr.gemspec"] do
-  system "gem build installr.gemspec"
+desc "Run specs"
+RSpec::Core::RakeTask.new do |t|
+  t.verbose = false
+  t.rspec_opts = '--color --order random'
 end
 
+task :default => :spec
