@@ -1,4 +1,4 @@
-# installr
+# installr [![Build Status](https://secure.travis-ci.org/attomos/installr.svg?branch=master)](http://travis-ci.org/attomos/installr) [![NPM version](https://badge.fury.io/rb/installr.svg)](http://badge.fury.io/rb/installr)
 
 CLI for Installr (http://installrapp.com/) API.
 
